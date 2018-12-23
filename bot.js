@@ -16,6 +16,15 @@ client.on('ready', () => {
 });
 
 
+      
+
+client.on('message', message => {
+    if(message.content === '-s1'){
+       let say = args.join(" ").slice();
+        message.channel.send(`${say}`)
+    }
+});
+
 client.on('message', message => {
     if(message.content === '-راتب'){
         message.channel.send('#daily')
