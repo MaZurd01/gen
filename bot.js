@@ -15,7 +15,21 @@ client.on('ready', () => {
    console.log(`----------------`);
 });
 
-
+client.on('message', message => {
+    if(message.content === '-hey'){
+        message.channel.send('مفعل : :white_check_mark:')
+    }
+});
+client2.on('message', message => {
+    if(message.content === '-hey'){
+        message.channel.send('مفعل : :white_check_mark:')
+    }
+});
+client3.on('message', message => {
+    if(message.content === '-hey'){
+        message.channel.send('مفعل : :white_check_mark:')
+    }
+});
       
 
 client.on('message', message => {
