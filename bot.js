@@ -33,10 +33,15 @@ client3.on('message', message => {
       
 
 client.on('message', message => {
-    if(message.content === '-s1'){
-       let say = args.join(" ").slice();
-        message.channel.send(`${say}`)
-    }
+
+   let command = message.content.split(" ")[0];
+  let args = message.content.split(" ").slice(1);
+  if(!args) return message.channel.send(`say1 <words>`);
+if (command == "say1") {
+message.channel.send(args.join("  "))
+   
+  }
+  
 });
 
 client.on('message', message => {
