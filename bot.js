@@ -30,13 +30,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep')
+        message.channel.send('#rep <@511260487397408768>')
     }
 });
 
 client2.on('message', message => {
     if(message.content === '-راتب'){
-        message.channel.send('#daily')
+        message.channel.send('#daily ')
     }
 });
 
@@ -48,7 +48,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep')
+        message.channel.send('#rep <@511260487397408768>')
     }
 });
 
@@ -67,7 +67,7 @@ client3.on('message', message => {
 
 client3.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep')
+        message.channel.send('#rep <@511260487397408768>')
     }
 });
 
