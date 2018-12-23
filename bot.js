@@ -44,6 +44,32 @@ message.channel.send(args.join("  "))
   
 });
 
+
+client2.on('message', message => {
+
+   let command = message.content.split(" ")[0];
+  let args = message.content.split(" ").slice(1);
+  if(!args) return message.channel.send(`say2 <words>`);
+if (command == "say2") {
+message.channel.send(args.join("  "))
+   
+  }
+  
+});
+
+
+client3.on('message', message => {
+
+   let command = message.content.split(" ")[0];
+  let args = message.content.split(" ").slice(1);
+  if(!args) return message.channel.send(`say3 <words>`);
+if (command == "say3") {
+message.channel.send(args.join("  "))
+   
+  }
+  
+});
+
 client.on('message', message => {
     if(message.content === '-راتب'){
         message.channel.send('#daily')
